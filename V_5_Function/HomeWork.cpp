@@ -121,27 +121,31 @@
 // WRITE A FUNCTION TO PRINT A YEAR IS LEAP YEAR OR NOT --> 
 
 
-#include<iostream>
-using namespace std;
+            // #include<iostream>
+            // using namespace std;
 
-bool getLeapYear( int y ) {
-    if ( ( y % 4 == 0  &&   y % 100 != 0   ) || ( y % 400 == 0) ) {
-        return true;
-    }
-    return false;
-}
+            // bool getLeapYear( int y ) {
+            //     if ( ( y % 4 == 0  &&   y % 100 != 0   ) || ( y % 400 == 0) ) {
+            //         return true;
+            //     }
+            //     return false;
+            // }
 
-int main() {
+            // int main() {
 
-    int year;
-    cout << "Enter A Year : " ;
-    cin >> year;
+            //     int year;
+            //     cout << "Enter A Year : " ;
+            //     cin >> year;
 
-    if ( getLeapYear( year ) ) {
-        cout << "This Is A Leap Year.!";
-    } else {
-        cout << "This Is Not A Leap Year.!";
-    }
+            //     if ( getLeapYear( year ) ) {
+            //         cout << "This Is A Leap Year.!";
+            //     } else {
+            //         cout << "This Is Not A Leap Year.!";
+            //     }
 
-    return 0;
-}
+            //     return 0;
+            // }
+
+
+
+
