@@ -1,0 +1,1 @@
+  // cout << "The binary number of " << number << " is : " << decToBinary( number );
