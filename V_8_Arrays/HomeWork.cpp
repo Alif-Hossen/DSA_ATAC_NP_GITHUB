@@ -110,52 +110,116 @@
 
 // WAF TO SWAP THE MAX & MIN NUMBER OF AN ARRAY
 
-#include <iostream>
-#include <climits>
-using namespace std;
+            // #include <iostream>
+            // #include <climits>
+            // using namespace std;
 
-int maximumNumber ( int arr[], int size ) {
-    int max = INT_MIN;
-    for( int i= 0; i< size; i++ ) {
-        if(arr[i] > max) {
-            max = arr[i];
-        }
-    }
-    return max;
-}
-int minimumNumber ( int arr[], int size ) {
-    int min = INT_MAX;
-    for( int i= 0; i< size; i++ ) {
-        if(arr[i] < min) {
-            min = arr[i];
-        }
-    }
-    return min;
-}
+            // int maximumNumber ( int arr[], int size ) {
+            //     int max = INT_MIN;
+            //     for( int i= 0; i< size; i++ ) {
+            //         if(arr[i] > max) {
+            //             max = arr[i];
+            //         }
+            //     }
+            //     return max;
+            // }
+            // int minimumNumber ( int arr[], int size ) {
+            //     int min = INT_MAX;
+            //     for( int i= 0; i< size; i++ ) {
+            //         if(arr[i] < min) {
+            //             min = arr[i];
+            //         }
+            //     }
+            //     return min;
+            // }
 
-int main() {
+            // int main() {
 
-    int array[] = { 2, 43, 60, -234, 93, -56, 234, -2, -3432 };
-    int size = sizeof(array) / sizeof(array[0]) ;
+            //     int array[] = { 2, 43, 60, -234, 93, -56, 234, -2, -3432 };
+            //     int size = sizeof(array) / sizeof(array[0]) ;
 
-    int max = maximumNumber( array, size );
-    int min = minimumNumber( array, size );
+            //     int max = maximumNumber( array, size );
+            //     int min = minimumNumber( array, size );
 
-    cout << "Before Swapping : " << endl;
-    cout << "Maximum Number Is : " << max << endl;
-    cout << "Minimum Number Is : " << min << endl;
+            //     cout << "Before Swapping : " << endl;
+            //     cout << "Maximum Number Is : " << max << endl;
+            //     cout << "Minimum Number Is : " << min << endl;
 
-    swap(max, min);
+            //     swap(max, min);
 
-    cout << "After Swapping : " << endl;
-    cout << "Maximum Number Is : " << max << endl;
-    cout << "Minimum Number Is : " << min << endl;
+            //     cout << "After Swapping : " << endl;
+            //     cout << "Maximum Number Is : " << max << endl;
+            //     cout << "Minimum Number Is : " << min << endl;
 
-    return 0;
-}
+            //     return 0;
+            // }
 
 
 // WAF TO PRINT ALL THE UNIQUE VALUE IN AN ARRAY
 
+            #include <iostream>
+            using namespace std;
+
+            void printUnique(int arr[], int size) {
+
+                for (int i = 0; i < size; i++) {
+
+                    bool isUnique = true;
+
+                    for (int j = 0; j < size; j++) {
+                        if (i != j && arr[i] == arr[j]) {
+                            isUnique = false;
+                            break;
+                        }
+                    }
+
+                    if (isUnique) {
+                        cout << arr[i] << " ";
+                    }
+                }
+            }
+
+            int main() {
+
+                int arr[] = {1, 2, 3, 2, 4, 5, 1, 6};
+                int size = sizeof(arr) / sizeof(arr[0]);
+
+                cout << "Unique values are: ";
+                printUnique(arr, size);
+
+                return 0;
+            }
 
 // WAF TO PRINT INTERSECTION OF 2 ARRAY
+
+            #include <iostream>
+            using namespace std;
+
+            void printIntersection(int arr1[], int size1, int arr2[], int size2) {
+
+                cout << "Intersection: ";
+
+                for (int i = 0; i < size1; i++) {
+
+                    for (int j = 0; j < size2; j++) {
+
+                        if (arr1[i] == arr2[j]) {
+                            cout << arr1[i] << " ";
+                            break;  
+                        }
+                    }
+                }
+            }
+
+            int main() {
+
+                int arr1[] = {1, 2, 3, 4, 5};
+                int arr2[] = {3, 4, 5, 6, 7};
+
+                int size1 = sizeof(arr1) / sizeof(arr1[0]);
+                int size2 = sizeof(arr2) / sizeof(arr2[0]);
+
+                printIntersection(arr1, size1, arr2, size2);
+
+                return 0;
+            }
