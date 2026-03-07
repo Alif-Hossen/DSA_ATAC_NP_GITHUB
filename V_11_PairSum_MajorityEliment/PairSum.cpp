@@ -1,38 +1,38 @@
 // It should be sorted in either ascending or descending.
 // Brute force approach  --> 0(n)^2
 
-        // #include <iostream>
-        // #include <vector>
-        // using namespace std;
+        #include <iostream>
+        #include <vector>
+        using namespace std;
 
-        // vector<int> pairSum( vector<int> nums, int target ) {
-        //     vector<int> answer;
-        //     int n = nums.size();
+        vector<int> pairSum( vector<int> nums, int target ) {
+            vector<int> answer;
+            int n = nums.size();
 
-        //     for( int i= 0; i< n; i++ ) {
-        //         for( int j= i+1; j< n; j++ ) {
-        //             if( nums[i] + nums[j] == target ) {
-        //                 answer.push_back(i);
-        //                 answer.push_back(j);
-        //                 return answer;
-        //             }
-        //         }
-        //     }
-        //     return answer;
-        // }
+            for( int i= 0; i< n; i++ ) {
+                for( int j= i+1; j< n; j++ ) {
+                    if( nums[i] + nums[j] == target ) {
+                        answer.push_back(i);
+                        answer.push_back(j);
+                        return answer;
+                    }
+                }
+            }
+            return answer;
+        }
 
-        // int main() {
+        int main() {
 
-        //     vector<int> nums = { 2, 7, 11, 15 };
-        //     int target = 13;
+            vector<int> nums = { 2, 7, 11, 15 };
+            int target = 13;
 
-        //     vector<int> answer = pairSum( nums, target );
+            vector<int> answer = pairSum( nums, target );
 
-        //     cout << "First Index : " << answer[0] << endl;
-        //     cout << "Second Index : " << answer[1] << endl;
+            cout << "First Index : " << answer[0] << endl;
+            cout << "Second Index : " << answer[1] << endl;
 
-        //     return 0;
-        // }
+            return 0;
+        }
 
 
 
