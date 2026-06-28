@@ -4,9 +4,8 @@
 
 using namespace std;
 
-long long minimumArraySum(vector<int>& nums) {
+long long minimumArraySum(vector<int>& nums) { // 4, 2, 8, 3
 
-    // array এর minimum value বের করি
     int mn = *min_element(nums.begin(), nums.end());
 
     long long sum = 0;
@@ -15,11 +14,13 @@ long long minimumArraySum(vector<int>& nums) {
 
         // যদি minimum দিয়ে divisible হয়
         // তাহলে এটাকে minimum বানানো যাবে
+
         if (nums[i] % mn == 0) {
             sum += mn;
         }
         else {
             // না হলে same থাকবে
+
             sum += nums[i];
         }
     }

@@ -22,7 +22,7 @@ int main( ) {
     cin >> number;
 
     int result = reverseNumber( number );
-    cout << " The Reversed Number sIs : " << result << endl;
+    cout << " The Reversed Number Is : " << result << endl;
 
     return 0;
 }

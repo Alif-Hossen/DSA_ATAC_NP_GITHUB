@@ -7,34 +7,34 @@
 
 // BRUTE FORCE ALGORITHM ---->
 
-        // #include <iostream>
-        // #include <vector>
+        #include <iostream>
+        #include <vector>
 
-        // using namespace std;
+        using namespace std;
 
-        // int main() {
+        int main() {
 
-        //     int size = 5;
-        //     int array[] = {1, 2, 3, 4, 5};
+            int size = 5;
+            int array[] = {1, 2, 3, 4, 5};
 
-        //     int maximumSum = 0;
+            int maximumSum = 0;
 
-        //     for ( int start = 0; start< size; start++ ) {
-        //         int currentSum = 0;
-        //         for ( int end= start; end< size; end++ ) {
-        //             currentSum += array[end];
-        //             maximumSum = max ( maximumSum, currentSum );
-        //         }
-        //     }
+            for ( int start = 0; start< size; start++ ) {
+                int currentSum = 0;
+                for ( int end= start; end< size; end++ ) {
+                    currentSum += array[end];
+                    maximumSum = max ( maximumSum, currentSum );
+                }
+            }
 
-        //     cout << "The Maximum Sub Array Sub Is : " << maximumSum << endl;
+            cout << "The Maximum Sub Array Sub Is : " << maximumSum << endl;
 
-        //     return 0;
-        // }
+            return 0;
+        }
 
 
 
-// KADANE'S ALGORITHM ( MOST OPTIMISED ) ---->
+// KADANE'S ALGORITHM ( MOST OPTIMIZED ) ---->
 
 
     // Kadane's algo says if one one number is negative then no need to add this number, insted of add 0 - so that sum won't negative.!

@@ -20,16 +20,16 @@
 
 // LOCAL --> 
 
-    // #include <iostream>
-    // using namespace std;
+    #include <iostream>
+    using namespace std;
 
-    // int fun () {
-    //     cout << x;  // error -> x is not define in the scope.!
-    // }
+    int fun () {
+        cout << x;  // error -> x is not define in the scope.!
+    }
 
-    // int main () {
+    int main () {
 
-    //    int x = 5;
-    //     fun();
+       int x = 5;
+        fun();
 
-    // }
+    }

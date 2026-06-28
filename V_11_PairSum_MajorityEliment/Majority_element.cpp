@@ -79,7 +79,8 @@
 
 
 
-// MOOR'S VOTING ALGORITHM --> 0(n)
+// MOOR'S VOTING ALGORITHM --> 0(n) --> THE LAST VALUE OF ANSWER WILL BE MAJORITY ELEMENT THAT'S 100% TRUE..!
+
     // Assume frequency as power 
     // No need to sort 
     // Same element -> frequency ++
@@ -102,7 +103,7 @@
                         frequency ++;
                     } else {
                         frequency --;
-                    }
+                    } 
                 }
 
                 return answer;
